@@ -2,7 +2,8 @@ version: '3.5'
 
 services:
   db:
-    image: brunoe/postgresql-dvdrental
+    image: brunoe/postgres-java-notebooks
+    build: postgresql
     environment:
       POSTGRES_USER: ${POSTGRES_USER:-postgres}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
@@ -10,10 +11,10 @@ services:
     volumes:
       - pg-data:/data/postgres
     restart: unless-stopped
-#    ports:
-#      - 5432:5432
+    ports:
+      - 5432:5432
   notebooks:
-    image: brunoe/jupyterjava:c8c9a87
+    image: brunoe/jupyterjava:develop
     volumes:
       - $PWD:/notebooks
       - $HOME/.m2:/var/maven/.m2
