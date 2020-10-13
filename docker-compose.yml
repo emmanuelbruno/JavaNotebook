@@ -14,7 +14,8 @@ services:
     ports:
       - 5432:5432
   notebooks:
-    image: brunoe/jupyterjava:62df9dd
+    #image: brunoe/jupyterjava:62df9dd
+    image: brunoe/jupyterjava:b80d82c
     volumes:
       - $PWD:/notebooks
       - $HOME/.m2:/var/maven/.m2
