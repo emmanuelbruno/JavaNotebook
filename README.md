@@ -14,3 +14,4 @@ http://(6d5cf1cfbee5 or 127.0.0.1):8888/?token=a4dc41d46b543cbe81882d4b4ccd037b5
 et ouvrir dans un navigateur web :
 http://127.0.0.1:8888/?token=a4dc41d46b543cbe81882d4b4ccd037b5ea7a7c7769ec856
 
+Sous windows il faut activer ["shared drive"](https://docs.docker.com/docker-for-windows/troubleshoot/#volume-mounting-requires-shared-drives-for-linux-containers)
