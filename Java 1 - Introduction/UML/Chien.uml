@@ -1,0 +1,11 @@
+@startuml
+class Chien {
+    - tatouage : String
+    - nom : String
+    
+    - {static} nbChiens : int
+    - {static} NB_REFUGES : int
+    - {static} occupationRefuge : int[]
+        
+}    
+@enduml
