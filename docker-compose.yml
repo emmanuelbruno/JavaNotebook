@@ -1,33 +1,18 @@
-version: '3.5'
+version: "3.8"
 
 services:
-  db:
-    image: brunoe/postgres-java-notebooks
-    build: postgresql
-    environment:
-      POSTGRES_USER: ${POSTGRES_USER:-postgres}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
-      PGDATA: /data/postgres
-    volumes:
-      - pg-data:/data/postgres
-    restart: unless-stopped
-    ports:
-      - 5432:5432
-  notebooks:
-    image: brunoe/jupyterjava:6cde957
-    volumes:
-      - $PWD:/notebooks
-      - $HOME/.m2:/var/maven/.m2
-    ports:
-      - 8888:8888
-    environment:
-      MAVEN_CONFIG: '/var/maven/.m2'
-      MAVEN_OPTS: '-Duser.home=/var/maven'
-    depends_on:
-      - db
-    links:
-      - db
-
-volumes:
-  pg-data:
-
+  javanotebook:
+        image: brunoe/javanotebook:develop
+        environment:
+          - SUDO_PASSWORD=password
+          - PUID=${UID:?err}
+          - PGUID=${GID:?err}
+        volumes:
+          - "$PWD/notebooks:/notebooks"
+          - "$HOME/.m2:/home/user/.m2" 
+          - "$PWD/codeserver:/codeserver" 
+          - "$PWD/books:/books"        
+        ports:
+          - "${JUPYTER_PORT-8888}:8888"
+          - "${H2_SERVER_PORT-9092}:9092"
+  

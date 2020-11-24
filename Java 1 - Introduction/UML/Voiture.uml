@@ -1,7 +1,0 @@
-@startuml
-class Voiture {
-    - immatriculation : String
-    - marque : String
-    - enMarche : String
-}    
-@enduml

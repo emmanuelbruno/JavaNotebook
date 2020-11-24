@@ -1,0 +1,17 @@
+{
+    "files.exclude": {
+        "**/.bashrc": true,
+        "**/.bash_logout": true,
+        "**/.profile": true,
+        "**/.wget-hsts": true,
+        "**/.cache": true,
+        "**/.empty": true,
+        "**/.config": true,
+        "**/.jupyter": true,
+        "**/.local": true,
+        "**/.npm": true,
+        "**/.yarn": true,
+        "**/.conda": true
+    }
+}
+

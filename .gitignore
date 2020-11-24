@@ -1,4 +1,5 @@
 .ipynb_checkpoints/
+target/
 Java 1 - Introduction/Projects/helloworld/doc
 Java 1 - Introduction/Projects/helloworld/dist
 Java 1 - Introduction/MyApp/target
@@ -13,3 +14,27 @@ Java 1 - Introduction/Projects/Java/helloworld/build/
 Java 1 - Introduction/Projects/Java/helloworld/dist/
 
 Java 1 - Introduction/Projects/Java/helloworld/doc/
+
+*.class
+
+01_Introduction/resources/01.01/Projects/Java/helloworld/dist/
+
+01_Introduction/resources/01.01/Projects/Java/helloworld/doc/
+
+01_Introduction/resources/01.02/MyApp/target/
+
+01_Introduction/resources/01.02/MyPowerApp/target/
+
+01_Introduction/resources/01.05/MyJunitApp/target/
+
+codeserver/CachedExtensionVSIXs/
+
+codeserver/logs/
+
+books/books/full/_build/
+
+codeserver/User/globalStorage/
+
+codeserver/User/workspaceStorage/
+
+codeserver/machineid

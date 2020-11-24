@@ -1,0 +1,25 @@
+- file: Accueil
+
+- part: Introduction
+  chapters:
+  - file: 01_Introduction/01.01_InstallationCompilation
+  - file: 01_Introduction/01.02_MavenIntroduction
+
+- part: Les bases du langage Java
+  chapters:
+  - file: 01_Introduction/01.03_Base
+  - file: 02_Polymorphisme/02.01_Héritage
+  - file: 01_Introduction/01.04_Exceptions
+  - file: 01_Introduction/01.05_TestsUnitaires
+
+- part: Les librairies standards
+  chapters:
+  - file: 03_Collections/03.01_Collections
+  
+- part: Les bases de données relationnelles
+  chapters:
+  - file: 07_JDBC/07.01_IntroductionJDBC
+  - file: 08_JPA/08.01_JPAFirstApp
+  - file: 08_JPA/08.02_JPABasics
+  - file: 08_JPA/08.03_JPAHeritage
+  - file: 08_JPA/08.04_Queries
